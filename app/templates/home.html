@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<!-- Container com animação -->
+<div
+    class="container mt-5 d-flex flex-wrap justify-content-center gap-4 animate__animated animate__fadeIn animate__faster">
+
+    <!-- Card 1 -->
+    <div class="card shadow-lg text-center animate__animated animate__zoomIn animate__faster"
+        style="max-width: 22rem; border-radius: 1rem;">
+        <div class="card-body">
+            <h5 class="card-title">👋 Bem-vindo(a)!</h5>
+            <p class="card-text fs-5">É sua primeira vez por aqui? Que ótimo!</p>
+            <p class="card-text">Explore conteúdos incríveis para iniciar sua jornada nos estudos.</p>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card shadow-lg text-center animate__animated animate__zoomIn animate__faster animate__delay-1s"
+        style="max-width: 22rem; border-radius: 1rem;">
+        <div class="card-body">
+            <h5 class="card-title">💻 Cursos de Programação</h5>
+            <p class="card-text fs-5">Aprenda HTML, CSS, JavaScript, Python e mais.</p>
+            <p class="card-text">Material atualizado e direto ao ponto.</p>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card shadow-lg text-center animate__animated animate__zoomIn animate__faster animate__delay-2s"
+        style="max-width: 22rem; border-radius: 1rem;">
+        <div class="card-body">
+            <h5 class="card-title">🚀 E muito mais!</h5>
+            <p class="card-text fs-5">Design, banco de dados, projetos práticos e dicas de carreira.</p>
+            <p class="card-text">Tudo em um só lugar, feito pra você!</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Seção de destaque -->
+<section class="container text-center mt-5 pt-5 animate__animated animate__fadeInUp animate__faster">
+    <h2 class="fw-bold mb-3">
+        🚀 Todas as habilidades que você precisa em um só lugar!
+    </h2>
+    <p class="lead">
+        Da base essencial às áreas técnicas, o <strong>JaoCursos</strong> te ajuda a evoluir com foco total na
+        <em>leitura</em> e <em>interpretação</em> — sem vídeos, direto ao ponto! 📚✨
+    </p>
+</section>
+<hr>
+<div class="container py-4">
+    <div class="d-flex overflow-auto gap-3 flex-nowrap">
+        <button class="btn btn-dark px-4 rounded-pill categoria-btn" data-target="#chatgpt">ChatGPT</button>
+        <button class="btn btn-light px-4 rounded-pill categoria-btn" data-target="#datascience">Data Science</button>
+        <button class="btn btn-light px-4 rounded-pill categoria-btn" data-target="#python">Python</button>
+        <button class="btn btn-light px-4 rounded-pill categoria-btn" data-target="#ml">Machine Learning</button>
+        <button class="btn btn-light px-4 rounded-pill categoria-btn" data-target="#deep">Aprendizado Profundo</button>
+        <button class="btn btn-light px-4 rounded-pill categoria-btn" data-target="#ai">Inteligência Artificial</button>
+    </div>
+</div>
+
+<!-- Conteúdos das Categorias -->
+<div class="container">
+    <div id="chatgpt" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>🤖 Curso de ChatGPT</h3>
+        <p>Aprenda a usar o ChatGPT para automatizar tarefas, gerar textos e muito mais!</p>
+    </div>
+    <div id="datascience" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>📊 Curso de Data Science</h3>
+        <p>Transforme dados em decisões com análise estatística e visualizações.</p>
+    </div>
+    <div id="python" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>🐍 Curso de Python</h3>
+        <p>Domine a linguagem mais versátil do mercado com projetos práticos.</p>
+    </div>
+    <div id="ml" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>📈 Machine Learning</h3>
+        <p>Crie modelos preditivos e entenda como as máquinas aprendem.</p>
+    </div>
+    <div id="deep" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>🧠 Aprendizado Profundo</h3>
+        <p>Explore redes neurais e aprendizado profundo com frameworks modernos.</p>
+    </div>
+    <div id="ai" class="categoria-content animate__animated animate__fadeIn d-none">
+        <h3>🤯 Inteligência Artificial</h3>
+        <p>Descubra como criar sistemas inteligentes que simulam o raciocínio humano.</p>
+    </div>
+</div>
+
+{% endblock %}
